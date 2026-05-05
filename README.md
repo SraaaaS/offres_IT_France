@@ -77,7 +77,7 @@ offres_IT_France/
 L’API utilisée est :
 
 ```text
-API Offres d’emploi v2
+API Offres d’emploi v2 (https://www.data.gouv.fr/dataservices/api-offres-demploi)
 ```
 
 ### Authentification OAuth2
@@ -90,7 +90,7 @@ client_credentials
 
 ### Variables d’environnement
 
-Créer un fichier `.env` :
+Dans un fichier `.env` :
 
 ```env
 CLIENT_ID=votre_client_id
@@ -202,7 +202,6 @@ Objectif final : produire une courbe claire de l’évolution des offres IT.
 ## Résultats attendus
 
 * volume total des offres M18 disponibles
-* répartition géographique par département
 * distribution temporelle des publications
 * tendance mensuelle / hebdomadaire
 * base exploitable pour analyse du marché de l’emploi tech
@@ -224,22 +223,14 @@ Améliorations possibles :
 
 ## Lancement du projet
 
-### Installation
-
+```bash
+git clone https://github.com/SraaaaS/offres_IT_France.git
+```
 ```bash
 pip install -r requirements.txt
 ```
 
-### Exécution
-
-```bash
-python src/recup_offres.py
-```
-
----
 
 ## Auteur
 
-Projet personnel réalisé dans une logique de montée en compétences Data / Data Engineering / analyse du marché de l’emploi IT.
-
-Objectif : produire un projet crédible, concret et défendable pour candidatures Master / Data / alternance / missions professionnelles.
+Projet personnel réalisé dans une logique de montée en compétences Data / Data Engineering.
